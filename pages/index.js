@@ -19,9 +19,10 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+        <p>Projects</p>
         <p>
           (This is a sample website - you’ll be building a site like this on{" "}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)

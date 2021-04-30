@@ -12,6 +12,7 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
