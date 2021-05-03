@@ -5,13 +5,14 @@ import Date from "../../components/date";
 
 import { getAllPostIds, getPostData } from "../../lib/posts";
 
-import utilStyles from "../../styles/utils.module.css";
+import utilStyles from "../../styles/utils.module.sass";
 
 export default function Post({ postData }) {
   return (
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
