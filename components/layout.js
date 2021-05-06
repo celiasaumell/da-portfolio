@@ -3,8 +3,8 @@ import Image from "next/image";
 import styles from "./layout.module.sass";
 import utilStyles from "../styles/utils.module.sass";
 import Link from "next/link";
-import Navigation from "./navigation"
-import Button from "react-bootstrap/Button"
+import Navigation from "./navigation";
+import { Button } from "react-bootstrap";
 
 const name = "Moises";
 export const siteTitle = "Moises Figueroa | Data Analyst";
