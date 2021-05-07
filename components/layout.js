@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.sass";
 import utilStyles from "../styles/utils.module.sass";
 import Link from "next/link";
-import Navigation from "./navigation";
+import Navigation from "./navigation.js";
 
 const name = "Moises";
 export const siteTitle = "Moises Figueroa | Data Analyst";
