@@ -1,5 +1,8 @@
 .homeHeader
-  display: block
+  display: flex
+  flex-direction: column
+  align-items: center
+  align-content: center
   padding: 50px
   text-align: center
   background-color: #20232a
@@ -11,3 +14,7 @@
 
 .backToHome
   margin: 3rem 0 0
+
+@media (min-width: 768px) 
+  .homeHeader
+    height: 100vh
