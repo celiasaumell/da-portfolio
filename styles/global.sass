@@ -1,36 +1,46 @@
 @import "custom"
 
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap')
+
 html,
-body 
+body
   padding: 0
   margin: 0
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif
+  font-family: 'Merriweather', serif
   line-height: 1.6
   font-size: 18px
+  background-color: $blue-bg
 
-
-* 
+*
   box-sizing: border-box
 
-
-a 
+a
+  color: white
   text-decoration: none
 
-
-img 
+img
   max-width: 100%
   display: block
 
+.navbar
+  top: 0
+  border-bottom: 1px solid black
 
-.navbar-toggler 
+.navbar-toggler
   border: 0
 
+.nav-item, .navbar-brand
+  font-size: 1.2rem
+
+.nav-link:hover
+  text-decoration: underline dotted white 
 
 .btn-primary
-  background-color: $indigo
   border: 0
   border-radius: 0
-  
+  background-color: $blue-bg
+  color: white
 
 .btn-primary:hover
-  background-color: $hover
+  color: rgba(255,255,255,.8)
+
