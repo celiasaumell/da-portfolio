@@ -26,14 +26,17 @@ export default function Layout({ children, home }) {
             <div className="mt-5 pt-5">
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
               <h3 className={utilStyles.headingXl}>Data Analyst</h3>
-              <button className="btn btn-primary" href="/portfolio">
-                View Portfolio{" "}
+              <button className="btn btn-primary" type="button" href="/portfolio">
+                View Portfolio
               </button>
             </div>
           </header>
         </div>
       ) : (
-        <header></header>
+        <div>
+          <Navigation />
+          <header></header>
+        </div>
       )}
       <main>{children}</main>
       {!home && (
