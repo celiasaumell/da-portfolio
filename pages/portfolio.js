@@ -1,49 +1,43 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
+import { getSortedProjectsData } from "../lib/projects";
 
-export default function Portfolio({}) {
+export default function Portfolio({ allProjectsData }) {
   return (
     <Layout>
       <Head>
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="card">
-              <img src="..." className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">
-                  Go somewhere
-                </a>
+      <section className="mt-5 px-3 portfolioContainer">
+        <h3 className="text-white">My portfolio</h3>
+        <div className="container">
+          <div className="row">
+            {allProjectsData.map(({ id, src, url, title, content }) => (
+              <div className="col" key={id}>
+                <div className="card">
+                  <img src={src} className="card-img-top" alt="..." />
+                  <div className="card-body">
+                    <h5 className="card-title">{title}</h5>
+                    <div className="card-text">{content}</div>
+                    <a href={url} className="btn btn-primary" target="_blank">
+                      View Project
+                    </a>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card">
-              <img src="..." className="card-img-top" alt="..." />
-              <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">
-                  {" "}
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-                <a href="#" class="btn btn-primary">
-                  Go somewhere
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
+}
+export async function getStaticProps() {
+  const allProjectsData = getSortedProjectsData();
+  return {
+    props: {
+      allProjectsData,
+    },
+  };
 }
