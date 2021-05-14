@@ -9,7 +9,7 @@ body
   font-family: 'Merriweather', serif
   line-height: 1.6
   font-size: 18px
-  background-color: $blue-bg
+  background-color: $darkblue-bg
 
 *
   box-sizing: border-box
@@ -22,10 +22,14 @@ img
   max-width: 100%
   display: block
 
-
 .navbar
+  background-color: black
   top: 0
   border-bottom: 1px solid black
+  text-align: center
+
+  &h-100
+    height: 100%
 
 .navbar-toggler
   border: 0
@@ -33,8 +37,12 @@ img
 .nav-item, .navbar-brand
   font-size: 1.2rem
 
+.nav-link
+  color: white
+  
 .nav-link:hover
   text-decoration: underline dotted white 
+
 
 .btn-primary
   border: 0
@@ -44,3 +52,15 @@ img
 
 .btn-primary:hover
   color: rgba(255,255,255,.8)
+
+.portfolioContainer
+  background-color: $darkblue-bg
+  height: 75vh
+
+@media (max-width: 1262px)
+
+
+@media (min-width: 1262px)
+  .navbar
+    background-color: $transparent
+    color: white

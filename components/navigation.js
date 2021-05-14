@@ -1,23 +1,31 @@
+import { useState } from "react";
 export default function Navigation() {
+
+  const [isFullHeight, setFullHeight] = useState(false);
+  const contentclassname = isFullHeight
+      ? "h-100"
+      : null;
   return (
+
     <>
-      <nav class="navbar navbar-dark bg-clear py-0 navbar-expand-lg justify-content-center fixed-top">
-        <div class="container-fluid">
+      <nav className={`${contentclassname} navbar py-0 navbar-dark navbar-expand-xl justify-content-around fixed-top`}>
+        <div className="container-fluid">
           <a href="/" class="navbar-brand d-flex w-50 me-auto">
             Moises Figueroa
           </a>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapsingNavbar3"
+            onClick={() => setFullHeight(!isFullHeight)}
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-            <ul class="navbar-nav w-100 justify-content-center">
-              <li class="nav-item active">
+          <div className="navbar-collapse collapse w-100" id="collapsingNavbar3">
+            <ul className="navbar-nav w-100 justify-content-center">
+              <li className="nav-item active">
                 <a
                   className="nav-link"
                   href="https://www.linkedin.com/in/moises--figueroa"
@@ -75,7 +83,7 @@ export default function Navigation() {
                 </a>
               </li>
             </ul>
-            <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
+            <ul class="nav navbar-nav ms-auto w-100 h-100 justify-content-end">
               <li class="nav-item">
                 <a className="nav-link" aria-current="page" href="/">
                   Home
@@ -94,11 +102,6 @@ export default function Navigation() {
               <li className="nav-item">
                 <a className="nav-link" href="/resume.pdf" target="_blank">
                   Resume
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/contact">
-                  Contact
                 </a>
               </li>
             </ul>

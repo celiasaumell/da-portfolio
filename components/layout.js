@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./layout.module.sass";
 import utilStyles from "../styles/utils.module.sass";
 import Link from "next/link";
-import Navigation from "./navigation.js";
+import Navigation from "./navigation";
 
 const name = "Moises Figueroa";
 export const siteTitle = "Moises Figueroa | Data Analyst";
@@ -18,28 +18,27 @@ export default function Layout({ children, home }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-
+      <Navigation />
       {home ? (
         <div>
-          <Navigation />
           <header className={styles.homeHeader}>
             <div className="mt-5 pt-5">
               <h1 className={utilStyles.heading2Xl}>{name}</h1>
               <h3 className={utilStyles.headingXl}>Data Analyst</h3>
-              <button className="btn btn-primary" type="button" href="/portfolio">
+              <button
+                className="btn btn-primary"
+                type="button"
+                href="/portfolio"
+              >
                 View Portfolio
               </button>
             </div>
           </header>
         </div>
       ) : (
-        <div>
-          <Navigation />
-        </div>
+        <div></div>
       )}
-
       <main>{children}</main>
-    
     </div>
   );
 }
