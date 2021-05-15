@@ -18,7 +18,6 @@ export default function Portfolio({ allProjectsData }) {
       github.push(project);
     }
   });
-  console.log(dataViz, programming, github);
 
   return (
     <Layout>
@@ -26,7 +25,7 @@ export default function Portfolio({ allProjectsData }) {
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="mt-5 pxy-3 portfolioContainer">
+      <section className="mt-5 pt-4 portfolioContainer">
         <TabbedNav />
 
         <div className="tab-content " id="myTabContent">

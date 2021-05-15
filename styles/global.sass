@@ -27,12 +27,21 @@ img
   top: 0
   border-bottom: 1px solid black
   text-align: center
+  align-content: start
 
   &h-100
+    transition: 0.5s
     height: 100%
+    position: fixed
+    overflow-x: hidden
+    top: 0
+  
+.hidden
+  display: none
 
-.navbar-toggler
+.navbar-toggler, .navbar-toggler:focus
   border: 0
+  box-shadow: none
 
 .nav-item, .navbar-brand
   font-size: 1.2rem
@@ -43,7 +52,12 @@ img
 .nav-link:hover
   text-decoration: underline dotted white 
 
+.nav-link.active
+  text-decoration: underline solid white
 
+.nav-tabs
+  border: 0
+  
 .btn-primary
   border: 0
   border-radius: 0
