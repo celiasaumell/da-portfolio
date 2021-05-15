@@ -16,7 +16,7 @@ export default function Navigation() {
       >
         <div className="container-fluid justify-content-start">
           <Link href="/">
-            <a class="navbar-brand d-flex w-50 me-auto ">Moises Figueroa</a>
+            <a class="navbar-brand d-flex w-50 me-auto py-1">Moises Figueroa</a>
           </Link>
 
           <button
@@ -39,9 +39,9 @@ export default function Navigation() {
             <ul
               className={`${isHiddenClass} navbar-nav w-100 justify-content-center`}
             >
-              <li className="nav-item active">
+              <li className="nav-item">
                 <a
-                  className="nav-link"
+                  className="nav-link py-1"
                   href="https://www.linkedin.com/in/moises--figueroa"
                   target="_blank"
                 >
@@ -61,7 +61,7 @@ export default function Navigation() {
               </li>
               <li class="nav-item">
                 <a
-                  className="nav-link"
+                  className="nav-link py-1"
                   href="https://github.com/mf11y"
                   target="_blank"
                 >
@@ -80,7 +80,7 @@ export default function Navigation() {
               </li>
               <li class="nav-item">
                 <a
-                  className="nav-link"
+                  className="nav-link py-1"
                   href="https://public.tableau.com/profile/moises.figueroa#!/"
                   target="_blank"
                 >
@@ -98,36 +98,34 @@ export default function Navigation() {
               </li>
             </ul>
             <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
-              <li class="nav-item">
+              <li class="nav-item ">
                 <Link href="/">
                 <a
-                    className={`nav-link ${
+                    className={`nav-link px-0 mx-2 py-1 ${
                       router.asPath === "/"
                         ? "active"
                         : null
                     }`}
-                  >
-                    Home
+                  >Home
                   </a>
                 </Link>
               </li>
               <li class="nav-item">
                 <Link href="/about-me">
                   <a
-                    className={`nav-link ${
+                    className={`nav-link px-0 mx-2 py-1 ${
                       router.asPath === "/about-me"
                         ? "active"
                         : null
                     }`}
-                  >
-                    About
+                  >About
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/portfolio">
                 <a
-                    className={`nav-link ${
+                    className={`nav-link px-0 mx-2 py-1 ${
                       router.asPath === "/portfolio"
                         ? "active"
                         : null
@@ -136,8 +134,7 @@ export default function Navigation() {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/resume.pdf" target="_blank">
-                  Resume
+                <a className="nav-link px-0 ms-2 py-1" href="/resume.pdf" target="_blank">Resume
                 </a>
               </li>
             </ul>
