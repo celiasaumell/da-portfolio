@@ -1,12 +1,11 @@
 @import "custom"
-
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap')
 
 html,
 body
   padding: 0
   margin: 0
-  font-family: 'Merriweather', serif
+  font-family: 'Inter', Helvetica, sans-serif
   line-height: 1.6
   font-size: 18px
   background-color: $darkblue-bg
@@ -29,7 +28,7 @@ img
   text-align: center
   align-content: start
 
-  &h-100
+  & .h-100
     transition: 0.5s
     height: 100%
     position: fixed
@@ -50,16 +49,22 @@ img
   color: white
   
 .nav-link:hover
-  text-decoration: underline dotted white 
+  text-decoration: underline dashed $white 
 
 .nav-link.active
-  text-decoration: underline solid white
+  text-decoration: underline solid $white
 
 .nav-tabs
   border: 0
+
+  & .nav-item 
+    border: solid 1px $white
+  
+  & .nav-link
+    text-decoration: none
   
 .btn-primary
-  border: 0
+  border: solid 1px white
   border-radius: 0
   background-color: $blue-bg
   color: white

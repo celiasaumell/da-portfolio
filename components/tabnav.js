@@ -1,8 +1,8 @@
 export default function TabbedNav() {
   return (
     <>
-      <ul className="nav nav-tabs justify-content-center my-5 pt-3" id="myTab" role="tablist">
-        <li className="nav-item" role="presentation">
+      <ul className="nav nav-tabs justify-content-center my-5 py-3" id="myTab" role="tablist">
+        <li className="nav-item me-3" role="presentation">
           <button
             className="nav-link active"
             id="dataviz-tab"
@@ -16,7 +16,7 @@ export default function TabbedNav() {
             Data Visualizations
           </button>
         </li>
-        <li className="nav-item" role="presentation">
+        <li className="nav-item me-3" role="presentation">
           <button
             className="nav-link"
             id="github-tab"

@@ -25,7 +25,7 @@ export default function Portfolio({ allProjectsData }) {
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="mt-5 pt-4 portfolioContainer">
+      <section className="pt-5 portfolioContainer">
         <TabbedNav />
 
         <div className="tab-content " id="myTabContent">
