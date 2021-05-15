@@ -13,7 +13,7 @@ export default function TabbedNav() {
             aria-controls="dataviz"
             aria-selected="true"
           >
-            Tableau Data Visualizations
+          Data Visualizations
           </button>
         </li>
         <li className="nav-item me-3" role="presentation">
@@ -26,22 +26,7 @@ export default function TabbedNav() {
             role="tab"
             aria-controls="github"
             aria-selected="false"
-          >
-            GitHub Data Projects
-          </button>
-        </li>
-        <li className="nav-item" role="presentation">
-          <button
-            className="nav-link"
-            id="programming-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#programming"
-            type="button"
-            role="tab"
-            aria-controls="programming"
-            aria-selected="false"
-          >
-            GitHub Programming Projects
+          > Data Science
           </button>
         </li>
       </ul>

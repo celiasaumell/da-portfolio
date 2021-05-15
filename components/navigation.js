@@ -97,45 +97,50 @@ export default function Navigation() {
                 </a>
               </li>
             </ul>
-            <ul class="nav navbar-nav ms-auto w-100 justify-content-end">
-              <li class="nav-item ">
+            <ul className="nav navbar-nav ms-auto w-100 justify-content-end main-nav" >
+              <li className="nav-item ">
                 <Link href="/">
-                <a
+                  <a
                     className={`nav-link px-0 mx-2 py-1 ${
-                      router.asPath === "/"
-                        ? "active"
-                        : null
+                      router.asPath === "/" ? "active" : null
                     }`}
-                  >Home
+                  >
+                    Home
                   </a>
                 </Link>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <Link href="/about-me">
                   <a
                     className={`nav-link px-0 mx-2 py-1 ${
-                      router.asPath === "/about-me"
-                        ? "active"
-                        : null
+                      router.asPath === "/about-me" ? "active" : null
                     }`}
-                  >About
+                  >
+                    About
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/portfolio">
-                <a
+                  <a
                     className={`nav-link px-0 mx-2 py-1 ${
-                      router.asPath === "/portfolio"
-                        ? "active"
-                        : null
+                      router.asPath === "/portfolio" ? "active" : null
                     }`}
-                  >Portfolio</a>
+                  >
+                    Portfolio
+                  </a>
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link px-0 ms-2 py-1" href="/resume.pdf" target="_blank">Resume
-                </a>
+                <Link href="/resume">
+                  <a
+                    className={`nav-link px-0 mx-2 py-1 ${
+                      router.asPath === "/resume" ? "active" : null
+                    }`}
+                  >
+                    Resume
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>

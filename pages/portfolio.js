@@ -5,15 +5,12 @@ import { getSortedProjectsData } from "../lib/projects";
 
 export default function Portfolio({ allProjectsData }) {
   var dataViz = [];
-  var programming = [];
   var github = [];
 
   console.log(allProjectsData);
   allProjectsData.forEach((project) => {
     if (project.heading === "dataviz") {
       dataViz.push(project);
-    } else if (project.heading === "programming") {
-      programming.push(project);
     } else if (project.heading === "github") {
       github.push(project);
     }
@@ -52,29 +49,7 @@ export default function Portfolio({ allProjectsData }) {
               ))}
             </div>
           </div>
-          <div
-            className="container tab-pane fade"
-            id="programming"
-            aria-labelledby="programming-tab"
-            role="tabpanel"
-          >
-            <div className="row justify-content-center">
-              {programming.map(({ id, src, url, title, content }) => (
-                <div className="col-sm-6 col-xs" key={id}>
-                  <div className="card mb-5">
-                    <img src={src} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                      <h5 className="card-title">{title}</h5>
-                      <div className="card-text">{content}</div>
-                      <a href={url} className="btn btn-primary" target="_blank">
-                        View Project
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
+          
           <div
             className="container tab-pane fade"
             id="github"
