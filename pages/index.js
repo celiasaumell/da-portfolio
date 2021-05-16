@@ -18,12 +18,12 @@ export default function Home() {
           <a className="btn btn-primary mt-4">View Portfolio</a>
         </Link>
       </div>
-      <div className="container mt-3 mx-auto">
+      <div className="container mt-5 mx-auto">
         
         <div className="card">
           <div className="row g-0 align-items-center">
-            <div className="col-lg-4 text-center ">
-              <img className="img-fluid pb-sm-4 pb-lg-0" src="/images/moises.png" alt="..." />
+            <div className="col-lg-4 text-center">
+              <img className="img-fluid pb-4 pb-lg-0" src="/images/moises.png" alt="..." />
             </div>
             <div className="col-lg-8 ">
               <div className="card-body ">
