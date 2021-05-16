@@ -23,7 +23,7 @@ export default function Home() {
         <div className="card">
           <div className="row g-0 align-items-center">
             <div className="col-lg-4 text-center ">
-              <img className="img-fluid" src="/images/moises.png" alt="..." />
+              <img className="img-fluid pb-sm-4 pb-lg-0" src="/images/moises.png" alt="..." />
             </div>
             <div className="col-lg-8 ">
               <div className="card-body ">
