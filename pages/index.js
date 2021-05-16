@@ -23,10 +23,10 @@ export default function Home() {
         <div className="card">
           <div className="row g-0 align-items-center">
             <div className="col-lg-4 text-center">
-              <img className="img-fluid pb-4 pb-lg-0" src="/images/moises.png" alt="..." />
+              <img className="img-fluid rounded-img pb-4 pb-lg-0" src="/images/moises.png" alt="..." />
             </div>
             <div className="col-lg-8 ">
-              <div className="card-body ">
+              <div className="card-body stand-out">
                 <h5 className="card-title">Hi! I'm Moises</h5>
                 <p className="card-text">
                   This is a wider card with supporting text below as a natural

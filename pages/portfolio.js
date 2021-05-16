@@ -34,7 +34,7 @@ export default function Portfolio({ allProjectsData }) {
           >
             <div className="row justify-content-center">
               {dataViz.map(({ id, src, url, title, content }) => (
-                <div className="col-sm-6 col-xs" key={id}>
+                <div className="col-md-6" key={id}>
                   <div className="card mb-5">
                     <img src={src} className="card-img-top" alt="..." />
                     <div className="card-body">
@@ -58,7 +58,7 @@ export default function Portfolio({ allProjectsData }) {
           >
             <div className="row justify-content-center">
               {github.map(({ id, src, url, title, content }) => (
-                <div className="col-sm-6 col-xs" key={id}>
+                <div className="col-md-6" key={id}>
                   <div className="card mb-5">
                     <img src={src} className="card-img-top" alt="..." />
                     <div className="card-body">
