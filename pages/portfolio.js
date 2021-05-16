@@ -22,10 +22,10 @@ export default function Portfolio({ allProjectsData }) {
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="pt-5 portfolioContainer">
+      <section className="py-5">
         <TabbedNav />
 
-        <div className="tab-content " id="myTabContent">
+        <div className="tab-content mt-5" id="myTabContent">
           <div
             className="container tab-pane fade show active"
             id="dataviz"

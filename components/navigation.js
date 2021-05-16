@@ -110,17 +110,6 @@ export default function Navigation() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/about-me">
-                  <a
-                    className={`nav-link px-0 mx-2 py-1 ${
-                      router.asPath === "/about-me" ? "active" : null
-                    }`}
-                  >
-                    About
-                  </a>
-                </Link>
-              </li>
-              <li className="nav-item">
                 <Link href="/portfolio">
                   <a
                     className={`nav-link px-0 mx-2 py-1 ${

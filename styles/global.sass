@@ -8,7 +8,7 @@ body
   font-family: 'Inter', Helvetica, sans-serif
   line-height: 1.6
   font-size: 18px
-  background-color: $darkblue-bg
+  background-color: $blue-bg
 
 *
   box-sizing: border-box
@@ -18,8 +18,8 @@ a
   text-decoration: none
 
 img
-  max-width: 100%
-  display: block
+  width: 250px
+
 
 .navbar
   background-color: black
@@ -81,8 +81,17 @@ img
   height: 1200px
   width: 75%
   background-image: url("/images/resume-1.png")
-  background-size: cover
+  background-size: contain
   background-repeat: no-repeat
+  filter: drop-shadow(0 0 0.75rem black)
+
+.card
+  background-color: transparent
+  border: 0
+
+.card-body
+  background-color: $transparent
+  color: white
 
 @media (max-width: 1262px)
 
