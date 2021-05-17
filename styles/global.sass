@@ -8,7 +8,7 @@ body
   font-family: 'Inter', Helvetica, sans-serif
   line-height: 1.6
   font-size: 18px
-  background-color: $blue-bg
+  background-color: #1b262c
 
 *
   box-sizing: border-box
@@ -24,21 +24,13 @@ img
   border-radius: 5px
 
 .navbar
+  transition: background-color 0.35s ease
   background-color: black
   top: 0
   border-bottom: 1px solid black
   text-align: center
   align-content: start
-
-  & .h-100
-    transition: 0.5s
-    height: 100%
-    position: fixed
-    overflow-x: hidden
-    top: 0
   
-.hidden
-  display: none
 
 .navbar-toggler, .navbar-toggler:focus
   border: 0
@@ -50,8 +42,7 @@ img
 .nav-link
   color: white
 
-.main-nav .active
-  border-bottom: inset 2px $white
+
 
 .nav-tabs
   border: 0
@@ -65,18 +56,12 @@ img
 .btn-primary
   border: solid 1px white
   border-radius: 0
-  background-color: $blue-bg
+  background-color: #3282b8
   color: white
 
 .btn-primary:hover
   color: rgba(255,255,255,.8)
 
-.portfolioContainer
-  background-color: $darkblue-bg
-  height: 75vh
-
-.vh-100
-  height: 100vh
 
 .resume
   display: block
@@ -100,11 +85,32 @@ img
   box-shadow: 0px 0px 5px rgba(255,255,255,0.5) 
   border-radius: 3px
 
+.blue-text-color
+  color: #bbe1fa
 
-@media (max-width: 1262px)
-
+.smaller-pipes
+  font-size: .9rem
 
 @media (min-width: 1262px)
   .navbar
+    transition: background-color 0.35s ease
     background-color: $transparent
     color: white
+
+  .main-nav .active
+    border-bottom: inset 2px $white
+
+@media (max-width: 1262px) 
+  #collapsingNavbar3
+    height: 100vh
+    transition: height 0.05s linear
+    padding: calc(100vh/4) 0px
+
+  .main-nav .nav-item
+    padding: 10px
+
+  .smaller-pipes
+    display: none
+
+    
+  

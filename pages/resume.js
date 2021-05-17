@@ -10,7 +10,7 @@ export default function Resume() {
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="text-center container py-5 mx-auto">
+      <section className="text-center container py-5 mt-5 mx-auto">
         <a className="btn btn-primary mb-4" href="/resume.pdf" download >
           Download as PDF
         </a>

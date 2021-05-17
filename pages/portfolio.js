@@ -6,8 +6,7 @@ import { getSortedProjectsData } from "../lib/projects";
 export default function Portfolio({ allProjectsData }) {
   var dataViz = [];
   var github = [];
-
-  console.log(allProjectsData);
+  
   allProjectsData.forEach((project) => {
     if (project.heading === "dataviz") {
       dataViz.push(project);
@@ -22,7 +21,7 @@ export default function Portfolio({ allProjectsData }) {
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="py-5">
+      <section className="py-5 mt-5">
         <TabbedNav />
 
         <div className="tab-content mt-5" id="myTabContent">
