@@ -20,6 +20,7 @@ header
   flex: none
 
 
+
 main
   overflow-y: scroll 
   flex: auto
@@ -38,7 +39,6 @@ img
   border-radius: 5px
 
 .navbar
-  transition: background-color 0.35s ease
   background-color: black
   top: 0
   border-bottom: 1px solid black
@@ -102,16 +102,14 @@ img
 .smaller-pipes
   font-size: .9rem
 
-@media (min-width: 1262px)
+@media (min-width: 576px)
   .navbar
-    transition: background-color 0.35s ease
-    background-color: $transparent
     color: white
 
   .main-nav .active
     border-bottom: inset 2px $white
 
-@media (max-width: 1262px) 
+@media (max-width: 576px) 
   #collapsingNavbar3
     height: 100vh
     transition: height 0.05s linear

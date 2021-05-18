@@ -1,4 +1,3 @@
-import React, { useState, useRef } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
@@ -8,7 +7,7 @@ export default function Navigation() {
   return (
     <>
       <nav
-        className={`navbar py-0 navbar-dark navbar-expand-xl`}
+        className={`navbar py-0 navbar-dark navbar-expand-sm`}
       >
         <div className="container-fluid justify-content-start">
           <Link href="/">
