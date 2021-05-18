@@ -1,4 +1,5 @@
 import Head from "next/head";
+import styles from "./layout.module.sass";
 import Navigation from "./navigation";
 
 const name = "Moises Figueroa";
@@ -6,7 +7,7 @@ export const siteTitle = "Moises Figueroa | Data Analyst";
 
 export default function Layout({ children, home }) {
   return (
-    <div>
+    <div id="wrapper">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="My portfolio" />
@@ -14,17 +15,11 @@ export default function Layout({ children, home }) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Navigation />
-      {home ? (
-        <div>
-          <header>
-            
-            
-          </header>
-        </div>
-      ) : (
-        <header></header>
-      )}
+
+      <header>
+        <Navigation />
+      </header>
+
       <main>{children}</main>
     </div>
   );

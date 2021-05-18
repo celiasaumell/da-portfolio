@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <div className={`${styles.homeHeader} text-center text-white`}>
         <h1 className={utilStyles.heading2Xl}>{name}</h1>
-        <h3 className={utilStyles.headingXl}>Data Analyst</h3>
+        <h3 className={`${utilStyles.headingXl} my-0`}>Data Analyst</h3>
         <Link href="/portfolio">
           <a className="btn btn-primary mt-4">View Portfolio</a>
         </Link>

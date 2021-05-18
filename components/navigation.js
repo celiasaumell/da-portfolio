@@ -8,7 +8,7 @@ export default function Navigation() {
   return (
     <>
       <nav
-        className={`navbar py-0 navbar-dark navbar-expand-xl fixed-top`}
+        className={`navbar py-0 navbar-dark navbar-expand-xl`}
       >
         <div className="container-fluid justify-content-start">
           <Link href="/">
