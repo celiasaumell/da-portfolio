@@ -4,7 +4,7 @@ export default function TabbedNav() {
       <ul className="nav nav-tabs justify-content-center" id="myTab" role="tablist">
         <li className="nav-item me-3" role="presentation">
           <button
-            className="nav-link active"
+            className="btn nav-link active"
             id="dataviz-tab"
             data-bs-toggle="tab"
             data-bs-target="#dataviz"
@@ -18,7 +18,7 @@ export default function TabbedNav() {
         </li>
         <li className="nav-item me-3" role="presentation">
           <button
-            className="nav-link"
+            className="btn nav-link"
             id="github-tab"
             data-bs-toggle="tab"
             data-bs-target="#github"

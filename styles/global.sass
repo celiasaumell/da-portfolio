@@ -35,6 +35,12 @@ a
 img
   width: 250px
 
+@mixin btn-primary
+  border: solid 1px white
+  border-radius: 0
+  background-color: #3282b8
+  color: white
+
 .rounded-img
   border-radius: 5px
 
@@ -64,12 +70,14 @@ img
   
   & .nav-link
     text-decoration: none
-  
+
+.nav-tabs .nav-link.active
+      @include btn-primary
+
 .btn-primary
-  border: solid 1px white
-  border-radius: 0
-  background-color: #3282b8
-  color: white
+  @include btn-primary
+
+
 
 .btn-primary:hover
   color: rgba(255,255,255,.8)

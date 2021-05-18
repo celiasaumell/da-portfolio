@@ -24,7 +24,7 @@ export default function Portfolio({ allProjectsData }) {
       <section className="py-5">
         <TabbedNav />
 
-        <div className="tab-content mt-5" id="myTabContent">
+        <div className="tab-content mt-4" id="myTabContent">
           <div
             className="container tab-pane fade show active"
             id="dataviz"
