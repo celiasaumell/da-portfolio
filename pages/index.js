@@ -20,7 +20,7 @@ export default function Home() {
           <a className="btn btn-primary mt-4">View Portfolio</a>
         </Link>
       </div>
-      <div className={`container py-4 my-4 mx-auto`}>
+      <div className={`container pt-5 pb-4 mx-auto`}>
         <div className="card">
           <div className="row g-0 align-items-center">
             <div className="col-lg-4 text-center">

@@ -21,10 +21,10 @@ export default function Portfolio({ allProjectsData }) {
         <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <section className="py-5">
+      <section className="">
         <TabbedNav />
 
-        <div className="tab-content mt-4" id="myTabContent">
+        <div className="tab-content" id="myTabContent">
           <div
             className="container tab-pane fade show active"
             id="dataviz"
@@ -34,7 +34,7 @@ export default function Portfolio({ allProjectsData }) {
             <div className="row justify-content-center">
               {dataViz.map(({ id, src, url, title, content }, index) => (
                 <div className="col-md-6 d-flex align-items-stretch" key={id}>
-                  <div className="card mb-5">
+                  <div className="card w-100 mb-5">
                     <img src={src} className="card-img-top" alt="..." />
                     <div className="card-body d-flex flex-column ">
                       <h5 className="card-title">{title}</h5>
