@@ -2,9 +2,9 @@ export default function TabbedNav() {
   return (
     <>
       <ul className="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-        <li className="nav-item me-3" role="presentation">
+        <li className="nav-item" role="presentation">
           <button
-            className="btn nav-link active"
+            className="btn nav-link active btn-tab"
             id="dataviz-tab"
             data-bs-toggle="tab"
             data-bs-target="#dataviz"
@@ -13,12 +13,13 @@ export default function TabbedNav() {
             aria-controls="dataviz"
             aria-selected="true"
           >
-          Data Visualizations
+          Data Visualization
           </button>
         </li>
-        <li className="nav-item me-3" role="presentation">
+        <div id="tabBarConnectingLine"></div>
+        <li className="nav-item" role="presentation">
           <button
-            className="btn nav-link"
+            className="btn nav-link btn-tab"
             id="github-tab"
             data-bs-toggle="tab"
             data-bs-target="#github"

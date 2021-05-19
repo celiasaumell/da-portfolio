@@ -6,7 +6,7 @@ import { getSortedProjectsData } from "../lib/projects";
 export default function Portfolio({ allProjectsData }) {
   var dataViz = [];
   var github = [];
-  
+
   allProjectsData.forEach((project) => {
     if (project.heading === "dataviz") {
       dataViz.push(project);
@@ -32,23 +32,29 @@ export default function Portfolio({ allProjectsData }) {
             role="tabpanel"
           >
             <div className="row justify-content-center">
-              {dataViz.map(({ id, src, url, title, content }) => (
-                <div className="col-md-6" key={id}>
+              {dataViz.map(({ id, src, url, title, content }, index) => (
+                <div className="col-md-6 d-flex align-items-stretch" key={id}>
                   <div className="card mb-5">
                     <img src={src} className="card-img-top" alt="..." />
-                    <div className="card-body">
+                    <div className="card-body d-flex flex-column ">
                       <h5 className="card-title">{title}</h5>
-                      <div className="card-text">{content}</div>
-                      <a href={url} className="btn btn-primary" target="_blank">
-                        View Project
-                      </a>
+                      <div className="card-text mb-4">{content}</div>
+                      <div className="card-text mx-auto mt-auto">
+                        <a
+                          href={url}
+                          className="btn btn-primary"
+                          target="_blank"
+                        >
+                          View Project
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          
+
           <div
             className="container tab-pane fade"
             id="github"
@@ -56,14 +62,19 @@ export default function Portfolio({ allProjectsData }) {
             role="tabpanel"
           >
             <div className="row justify-content-center">
-              {github.map(({ id, src, url, title, content }) => (
+              {github.map(({ id, src, url, title, content }, index) => (
                 <div className="col-md-6" key={id}>
+                  <div>{index}</div>
                   <div className="card mb-5">
                     <img src={src} className="card-img-top" alt="..." />
                     <div className="card-body">
                       <h5 className="card-title">{title}</h5>
                       <div className="card-text">{content}</div>
-                      <a href={url} className="btn btn-primary" target="_blank">
+                      <a
+                        href={url}
+                        className="mx-auto mt-2 btn btn-primary"
+                        target="_blank"
+                      >
                         View Project
                       </a>
                     </div>
