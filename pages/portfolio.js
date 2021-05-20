@@ -37,7 +37,7 @@ export default function Portfolio({ allProjectsData }) {
                   <div className="card w-100 mb-5">
                     <img src={src} className="card-img-top" alt="..." />
                     <div className="card-body d-flex flex-column ">
-                      <h5 className="card-title">{title}</h5>
+                      <h5 className="card-title fw-bold">{title}</h5>
                       <div className="card-text mb-4">{content}</div>
                       <div className="card-text mx-auto mt-auto">
                         <a
@@ -62,21 +62,25 @@ export default function Portfolio({ allProjectsData }) {
             role="tabpanel"
           >
             <div className="row justify-content-center">
-              {github.map(({ id, src, url, title, content }, index) => (
-                <div className="col-md-6" key={id}>
-                  <div>{index}</div>
-                  <div className="card mb-5">
+              {github.map(({ id, src, url, title, content, presentation }) => (
+                <div className="col-md-6 d-flex align-items-stretch" key={id}>
+                  <div className="card w-100 mb-5">
                     <img src={src} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                      <h5 className="card-title">{title}</h5>
+                    <div className="card-body d-flex flex-column ">
+                      <h5 className="card-title fw-bold">{title}</h5>
                       <div className="card-text">{content}</div>
+                      <div className="card-text mx-auto mt-auto">
                       <a
                         href={url}
-                        className="mx-auto mt-2 btn btn-primary"
+                        className="mx-auto mt-2 me-2 btn btn-primary"
                         target="_blank"
                       >
                         View Project
                       </a>
+                      <a href={presentation} className="mx-auto mt-2 btn btn-primary" target="_blank">
+                        View Presentation
+                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
