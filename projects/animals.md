@@ -1,7 +1,7 @@
 ---
 src: '/images/Animals.png' 
-title: 'Could you beat these animals in a fight?'
+title: 'How confident are U.S. citizens in their abilities to take on animals?'
 url: 'https://public.tableau.com/profile/moises.figueroa#!/vizhome/Book2_16212915591980/Dashboard1'
 heading: 'dataviz'
-content: 'Repondents answers to whether they would be successful in a 1 on 1 fight against certain animals'
+content: 'Proportional Area Chart that shows the difference in perceived fighting abilites between men and women.'
 ---

@@ -1,7 +1,7 @@
 ---
 src: '/images/CEO.png' 
-title: 'CEO to Worker Compensation'
+title: 'How has the ratio of CEO compensation to typical worker compensation changed throughout the years?'
 url: 'https://public.tableau.com/profile/moises.figueroa#!/vizhome/WorkertoCEOCompensationRatio/Dashboard1'
 heading: 'dataviz'
-content: 'Difference in CEO compensation to worker compensation for 1965-2019'
+content: 'Pictorial Unit Chart that shows how the ratio of CEO Compensation:Worker Compensation has changed from 1965-2019.'
 ---
