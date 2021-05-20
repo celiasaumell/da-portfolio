@@ -1,7 +1,7 @@
 export default function TabbedNav() {
   return (
     <>
-      <ul className="nav nav-tabs justify-content-center mt-5 mb-4" id="myTab" role="tablist">
+      <ul className="nav nav-tabs justify-content-center my-5" id="myTab" role="tablist">
         <li className="nav-item" role="presentation">
           <button
             className="btn nav-link active btn-tab"
