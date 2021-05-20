@@ -30,8 +30,8 @@ export default function Home() {
                 alt="..."
               />
             </div>
-            <div className="col-lg-8 pb-4">
-              <div className="card-body stand-out ">
+            <div className="col-lg-8">
+              <div className="card-body stand-out">
                 <h5 className="card-title">Welcome!</h5>
                 <p className="card-text">
                   I am looking to switch my career path to a role that analyzes
@@ -54,7 +54,7 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <ul className="col-lg-8 offset-lg-4 nav justify-content-center">
+            <ul className="col-lg-8 offset-lg-4 nav justify-content-center pt-4">
               <li className="nav-item">
                 <a
                   className="nav-link py-1"
