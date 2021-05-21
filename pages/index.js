@@ -32,7 +32,7 @@ export default function Home() {
             </div>
             <div className="col-lg-8">
               <div className="card-body stand-out">
-                <h5 className="card-title">Welcome!</h5>
+                <h2 className="card-title">Welcome!</h2>
                 <p className="card-text">
                   I am looking to switch my career path to a role that analyzes
                   data to glean interesting insights.

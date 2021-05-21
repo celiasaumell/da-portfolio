@@ -15,6 +15,8 @@ export default function Portfolio({ allProjectsData }) {
     }
   });
 
+  dataViz.reverse()
+
   return (
     <Layout>
       <Head>
