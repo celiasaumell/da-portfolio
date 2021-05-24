@@ -6,23 +6,6 @@
   border-radius: 20px
   color: white
 
-.transition-fade 
-  transition: 0.4s
-  opacity: 1
-  animation: slideUp 0.8s linear forwards
-  
-
-html.is-animating .transition-fade 
-  opacity: 0
-
-
-@keyframes slideUp 
-  0% 
-    transform: translate3d(-100%, 0, 0)
-  100% 
-    transform: translate3d(0, 0, 0)
-  
-
 
 html, body
   padding: 0
@@ -32,11 +15,11 @@ html, body
   font-size: 16px
   background-color: #1b262c
 
-html, body, #__next, #wrapper2
+html, body, #__next, #wrapper
   height: 100%
   margin: 0
 
-#wrapper2
+#wrapper
   display: flex
   flex-direction: column
 

@@ -62,7 +62,8 @@ export default function Home() {
                   target="_blank"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
+                    xml
+                    ns="http://www.w3.org/2000/svg"
                     width="26"
                     height="26"
                     fill="currentColor"
@@ -74,7 +75,7 @@ export default function Home() {
                   LinkedIn
                 </a>
               </li>
-              <li className="nav-item">
+              <li class="nav-item">
                 <a
                   className="nav-link py-1"
                   href="https://github.com/mf11y"
@@ -93,7 +94,7 @@ export default function Home() {
                   GitHub
                 </a>
               </li>
-              <li className="nav-item">
+              <li class="nav-item">
                 <a
                   className="nav-link py-1"
                   href="https://public.tableau.com/profile/moises.figueroa#!/"
