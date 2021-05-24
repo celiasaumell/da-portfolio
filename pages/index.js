@@ -25,7 +25,7 @@ export default function Home() {
           <div className="row g-0 align-items-center">
             <div className="col-lg-4 text-center">
               <img
-                className="img-fluid rounded-img pb-4 pb-lg-0"
+                className="img-fluid rounded-img mb-4 mb-lg-0"
                 src="/images/moises.png"
                 alt="..."
               />
@@ -62,8 +62,7 @@ export default function Home() {
                   target="_blank"
                 >
                   <svg
-                    xml
-                    ns="http://www.w3.org/2000/svg"
+                    xmlns="http://www.w3.org/2000/svg"
                     width="26"
                     height="26"
                     fill="currentColor"
@@ -75,7 +74,7 @@ export default function Home() {
                   LinkedIn
                 </a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a
                   className="nav-link py-1"
                   href="https://github.com/mf11y"
