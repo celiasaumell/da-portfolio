@@ -1,13 +1,12 @@
 import Head from "next/head";
-import styles from "./layout.module.sass";
 import Navigation from "./navigation";
 
 const name = "Moises Figueroa";
 export const siteTitle = "Moises Figueroa | Data Analyst";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
-    <div id="wrapper">
+    <div id="wrapper2">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="My portfolio" />
@@ -20,7 +19,7 @@ export default function Layout({ children, home }) {
         <Navigation />
       </header>
 
-      <main>{children}</main>
+      <main id="swup" className="transition-fade">{children}</main>
     </div>
   );
 }
